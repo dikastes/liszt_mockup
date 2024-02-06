@@ -1,0 +1,26 @@
+.title {
+  margin-bottom: 2rem;
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+
+    h1, h2, h3 {
+      display: flex;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+    }
+
+    &-label {
+      font-weight: 500;
+      margin-right: 0.3em;
+      width: 100%;
+      @include media-breakpoint-up(md) {
+          width: auto;
+      }
+    }
+
+  }
+}
