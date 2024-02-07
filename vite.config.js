@@ -6,6 +6,7 @@ export default {
   build: {
     outDir: '../dist'
   },
+    base: '/liszt_mockup/',
   server: {
     port: 8080
   },
