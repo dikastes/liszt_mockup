@@ -27,9 +27,12 @@
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
-
+$enable-rounded: false;
+$enable-dark-mode: false;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 $font-family-base:      InterVariable, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$body-color:                #000;
+$border-color:                #000;
 
 $primary:#ff4208;
 $body-tertiary-bg:  #dee2e6; //gray 300
@@ -45,6 +48,15 @@ $h3-font-size:                $font-size-base * 1.5;
 $h4-font-size:                $font-size-base * 1.25;
 $h5-font-size:                $font-size-base * 1.25;
 $h6-font-size:                $font-size-base;
+$line-height-base:            1.4 !default;
+$line-height-sm:              1.25 !default;
+$line-height-lg:              2 !default;
+
+// eventuyally remove later:
+$navbar-light-color: #000;
+$navbar-light-toggler-border-color: #000;
+$navbar-nav-link-padding-x: 1rem;
+
 
 // Include functions first
 @import "bootstrap/scss/functions";
@@ -83,7 +95,7 @@ $h6-font-size:                $font-size-base;
 // @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+// S@import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
@@ -106,6 +118,9 @@ $h6-font-size:                $font-size-base;
 @import "forms";
 @import "sourceView";
 @import "sidebar";
+@import "general";
+@import "searchbar";
+@import "navigation";
 
 // @import "icon-list";
 

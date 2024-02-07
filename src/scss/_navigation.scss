@@ -1,0 +1,11 @@
+.mainnav {
+
+  // all text in uppercase
+    text-transform: uppercase;
+
+    // find last child of li in ul navbar-nav and set padding.right inside a tag 0
+    .navbar-nav > li:last-child > a {
+      padding-right: 0;
+    }
+
+}

@@ -4,7 +4,7 @@
     border: 1px solid $secondary-border-subtle;
     padding: 1rem;
     border-radius: $border-radius;
- text-align: center;
+    text-align: center;
     margin-bottom: 1rem;
     font-size: $small-font-size;
 
@@ -22,7 +22,7 @@
       &-label {
         display: block;
         text-decoration: none;
-       padding-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
         font-size: 1rem;
       }
     }
@@ -42,8 +42,9 @@
       align-items: center;
       display: inline-flex;
     }
+
     a {
-     text-overflow: ellipsis;
+      text-overflow: ellipsis;
       overflow: hidden;
       max-width: 250px;
       white-space: nowrap;
