@@ -29,13 +29,13 @@ $enable-gradients: true;
 $enable-shadows: true;
 $enable-rounded: false;
 $enable-dark-mode: false;
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+// $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 $font-family-base:      InterVariable, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $body-color:                #000;
 $border-color:                #000;
 
 $primary:#ff4208;
-$body-tertiary-bg:  #dee2e6; //gray 300
+$body-tertiary-bg:  #dddddd; //gray 300
 //$body-color: #333;
 // $body-bg: #fff;
 // $border-radius: .4rem;
@@ -53,9 +53,11 @@ $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
 // eventuyally remove later:
-$navbar-light-color: #000;
+$navbar-light-color: $body-color;
 $navbar-light-toggler-border-color: #000;
-$navbar-nav-link-padding-x: 1rem;
+
+$dropdown-link-hover-bg: $body-tertiary-bg;
+$dropdown-link-hover-color: $body-color;
 
 
 // Include functions first

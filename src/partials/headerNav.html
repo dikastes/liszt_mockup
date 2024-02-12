@@ -3,11 +3,15 @@
         <a class="navbar-brand navbar-brand-image" title="Liszt-Web" href="/">
             <div class="bg-primary text-white p-2 p-lg-4">LOGO</div>
         </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-bs-toggle="collapse"
-                data-target="#mainnavigation" data-bs-target="#mainnavigation" aria-controls="mainnavigation"
-                aria-expanded="false" aria-label="Navigation umschalten"><span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainnavigation" aria-controls="mainnavigation" aria-label="Navigation umschalten">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <nav id="mainnavigation" class="mainnav collapse navbar-collapse justify-content-end">
+        <nav id="mainnavigation" class="mainnav offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Hauptmenü</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="#" class="nav-link"
                                         title="Franz Liszt"><span class="nav-link-text">Franz Liszt</span></a></li>
@@ -64,6 +68,7 @@
                                         title="Aufführungen"><span class="nav-link-text">Aufführungen</span></a>
                 </li>
             </ul>
+            </div>
         </nav>
     </div>
 </header>
