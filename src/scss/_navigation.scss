@@ -30,7 +30,7 @@
      padding: 0.25em 0.4rem;
     }
 
-    &:hover {
+    &:hover, &:focus, &:active {
       .nav-link-text {
         background-color: var(--bs-body-color);
         color: var(--bs-nav-link-hover-color);

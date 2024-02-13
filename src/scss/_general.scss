@@ -7,3 +7,15 @@
     padding-right: 2rem;
   }
 }
+
+.text-collapse {
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.show-more {
+  display: none;
+  margin-top: -1em;
+}
