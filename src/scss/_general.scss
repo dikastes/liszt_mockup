@@ -19,3 +19,35 @@
   display: none;
   margin-top: -1em;
 }
+
+.bd-placeholder {
+  max-width: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+    color: $placeholder-color;
+  }
+  &-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+
+    border-color: $placeholder-color;
+
+    rect {
+      fill: $placeholder-color;
+    }
+
+  }
+  .label {
+    display: block;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
