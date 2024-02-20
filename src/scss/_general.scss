@@ -1,7 +1,15 @@
 
+main {
+  margin-top: 2rem;
+  @include media-breakpoint-up(md) {
+    margin-top: 4rem;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 5rem;
+  }
+}
 
 .container-xl {
-
   @include media-breakpoint-up(sm) {
     padding-left: 2rem;
     padding-right: 2rem;

@@ -1,11 +1,11 @@
 
 .footer {
-padding-top: 2rem;
+padding-top: 3rem;
   @include media-breakpoint-up(md) {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
   @include media-breakpoint-up(lg) {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 
   h3, h4 {

@@ -1,5 +1,11 @@
 .title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 4rem;
+  }
 
   .title-row {
     display: flex;
@@ -50,5 +56,24 @@
   }
 
 
+}
+
+.source-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+
+  &-label {
+    display: block;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.source-thumbnail {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
