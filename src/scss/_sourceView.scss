@@ -1,10 +1,10 @@
 .title {
   margin-bottom: 1rem;
   @include media-breakpoint-up(md) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   @include media-breakpoint-up(lg) {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .title-row {
@@ -42,21 +42,22 @@
   }
 }
 
-.source {
+/*.source {
   &-item {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
 
     &-text {
-      max-width: 600px;
+      max-width: $max-text-block-widht;
     }
 
   }
 
 
-}
+}*/
 
 .source-image {
   max-width: 200px;
