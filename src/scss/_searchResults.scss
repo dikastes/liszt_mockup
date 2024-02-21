@@ -1,30 +1,44 @@
 .filter {
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
-      justify-content: space-between;
-
-      input[type=checkbox] {
-        display: none;
+  &-block {
+    h4 {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+    &:first-of-type {
+      h4:first-child {
+        margin-top: 0;
       }
+    }
 
-      input[type=checkbox]:checked + label:before {
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Im01IDEzIDQgNEwxOSA3Ij48L3BhdGg+Cjwvc3ZnPg==);
-        background-color: var(--bs-primary);
 
-      }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        input[type=checkbox] {
+          display: none;
+        }
+
+        input[type=checkbox]:checked + label:before {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Im01IDEzIDQgNEwxOSA3Ij48L3BhdGg+Cjwvc3ZnPg==);
+          background-color: var(--bs-primary);
+
+        }
 
         label {
           display: flex;
           flex-grow: 0;
           align-items: center;
+
           &:before {
             margin-right: 0.75rem;
             display: block;
@@ -34,7 +48,7 @@
             border-radius: 0.25rem;
             border: solid 1px var(--bs-primary);
             background-position: center;
-          //S  color: var(--bs-primary);
+            //  color: var(--bs-primary);
             content: " ";
 
           }
@@ -55,5 +69,6 @@
       }
 
     }
+  }
 
 }
