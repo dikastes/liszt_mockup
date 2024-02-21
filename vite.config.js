@@ -21,6 +21,8 @@ function getHtmlEntries() {
 
     return entries;
 }
+
+
 export default {
   root: resolve(__dirname, 'src'),
   build: {

@@ -6,6 +6,8 @@
     <title>Suchergebnisse Liszt Quellen- und Werkverzeichnis</title>
     <link rel="stylesheet" href="scss/styles.scss">
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+
 </head>
 
 <body class="">
@@ -22,34 +24,59 @@
         <div class="title-row"><h1>Suchergebnisse für Ihre Suche nach "xxx"</h1></div>
         </div>
         <div class="row" style="min-height: 300px">
-            <div class="col-12 col-md-3 col-lg-2 bg-body-tertiary">
+            <div class="col-12 col-md-3 col-lg-2 ">
 <nav aria-label="Suchfilter" class="filter" >
     <h3 class="visually-hidden">Suchfilter</h3>
     <div class="filter-block">
         <h4 class="">Typ</h4>
         <ul>
-            <li><input type="checkbox" id="Reinschrift" name="Reinschrift" value="Reinschrift"><label for="Reinschrift">Reinschrift</label><span class="count">56</span></li>
-            <li><input type="checkbox" id="Manuskript" name="Manuskript" value="Manuskript"><label for="Manuskript">Manuskript</label><span class="count">30</span></li>
-            <li><input type="checkbox" id="Entwurf" name="Entwurf" value="Entwurf"><label for="Entwurf">Entwurf</label><span class="count">4</span></li>
-
+            <li><span class="form-check"><input class="form-check-input" type="checkbox" id="Reinschrift" value="Reinschrift"><label class="form-check-label" for="Reinschrift">Reinschrift</label></span><span class="count">56</span></li>
+            <li><span class="form-check"><input class="form-check-input" type="checkbox" id="Manuskript" value="Manuskript"><label class="form-check-label" for="Manuskript">Manuskript</label></span><span class="count">30</span></li>
+            <li><span class="form-check"><input class="form-check-input" type="checkbox" id="Entwurf" value="Entwurf"><label class="form-check-label" for="Entwurf">Entwurf</label></span><span class="count">4</span></li>
         </ul>
     </div>
 
     <div class="filter-block">
         <h4 class="">Ort</h4>
         <ul>
-            <li><input type="checkbox" id="Weimar" name="Weimar" value="Weimar"><label for="Weimar">Weimar</label><span class="count">35</span></li>
-            <li><input type="checkbox" id="Wien" name="Wien" value="Wien"><label for="Wien">Wien</label><span class="count">8</span></li>
-            <li><input type="checkbox" id="Paris" name="Paris" value="Paris"><label for="Paris">Paris</label><span class="count">3</span></li>
-
+            <li><span class="form-check"><input class="form-check-input" type="checkbox" id="Weimar" value="Weimar"><label class="form-check-label" for="Weimar">Weimar</label></span><span class="count">33</span></li>
+            <li><span class="form-check"><input class="form-check-input" type="checkbox" id="Paris" value="Paris"><label class="form-check-label" for="Paris">Paris</label></span><span class="count">12</span></li>
+            <li><span class="form-check"><input class="form-check-input" type="checkbox" id="Wien" value="Wien"><label class="form-check-label" for="Wien">Wien</label></span><span class="count">8</span></li>
         </ul>
+    </div>
+
+    <div class="filter-block">
+        <h4 class="">Zeitraum</h4>
+
+            <div id="slider"></div>
+
     </div>
 
 </nav>
 
             </div>
-            <div class="col-12 col-md-9 col-lg-10 filter bg-body-secondary">
-Ergebnisse
+            <div class="col-12 col-md-9 col-lg-10 filter">
+
+                <div class="search-result-item">
+                    <h3>Suchergebnis 1</h3>
+                </div>
+
+                <div class="search-result-item">
+                    <h3>Suchergebnis 2</h3>
+                </div>
+
+                <div class="search-result-item">
+                    <h3>Suchergebnis 3</h3>
+                </div>
+
+                <div class="search-result-item">
+                    <h3>Suchergebnis 4</h3>
+                </div>
+
+                <div class="search-result-item">
+                    <h3>Suchergebnis 5</h3>
+                </div>
+
             </div>
         </div>
     </div>
