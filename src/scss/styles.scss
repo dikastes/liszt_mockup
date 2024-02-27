@@ -63,6 +63,9 @@ $dropdown-link-hover-color: $body-color;
 
 $placeholder-color: #bbb;
 
+$focus-ring-color:      rgba(#ddd, 0.5);
+
+
 
 // Include functions first
 @import "bootstrap/scss/functions";
@@ -93,7 +96,7 @@ $placeholder-color: #bbb;
 @import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/accordion";
+@import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";

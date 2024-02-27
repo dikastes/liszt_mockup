@@ -1,3 +1,10 @@
+:root {
+  --bs-primary-bg-subtle: #ddd;
+  --bs-primary-text-emphasis: #000;
+  --bs-accordion-btn-focus-border-color: #000;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(20, 20, 20, 0.25);
+}
+
 
 main {
   margin-top: 2rem;
@@ -57,5 +64,20 @@ main {
     font-size: 0.85rem;
     text-align: center;
     margin-top: 0.5rem;
+  }
+}
+
+.icon {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  width: 1.5em;
+  margin-right: 0.5em;
+  background-color: var(--bs-primary);
+  color: white;
+  font-weight: 600;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: -2em;
   }
 }
