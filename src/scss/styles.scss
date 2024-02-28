@@ -65,6 +65,7 @@ $placeholder-color: #bbb;
 
 $focus-ring-color:      rgba(#ddd, 0.5);
 
+$mockup-border-gray: #ccc;
 
 
 // Include functions first
@@ -96,7 +97,7 @@ $focus-ring-color:      rgba(#ddd, 0.5);
 @import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
-@import "bootstrap/scss/accordion";
+//@import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
@@ -131,6 +132,8 @@ $focus-ring-color:      rgba(#ddd, 0.5);
 @import "searchbar";
 @import "navigation";
 @import "searchResults";
+@import "accordion";
+@import "images";
 
 // @import "icon-list";
 
