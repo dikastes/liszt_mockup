@@ -11,6 +11,8 @@ document.querySelectorAll('[data-verovio="mei"]')
                     defaultView: 'responsive', // instead of 'responsive' by default
                     documentZoom: 4 // 0-7, default is 3
                 }*/
+
+            // ToDo: Error handling
                 fetch(meiURL)
                     .then(response => response.text())
                     .then(mei => {
