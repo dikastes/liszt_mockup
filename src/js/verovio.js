@@ -7,17 +7,21 @@ document.querySelectorAll('[data-verovio="mei"]')
         createVerovioModule().then((verovioModule) => {
                 const toolkit = new VerovioToolkit(verovioModule);
                 const meiURL = verovioapp.getAttribute('data-verovio-url');
-/*                const options = {
-                    defaultView: 'responsive', // instead of 'responsive' by default
-                    documentZoom: 4 // 0-7, default is 3
-                }*/
+                toolkit.setOptions({
+                    scale: 50,
+                //    pageHeight: 100,
+                 // landscape: true,
+                   // adjustPageWidth: true,
+                    adjustPageHeight: true,
+                });
+              toolkit.select({measureRange: "1-8"})
 
             // ToDo: Error handling
                 fetch(meiURL)
                     .then(response => response.text())
                     .then(mei => {
                         toolkit.loadData(mei);
-                        const svg = toolkit.renderToSVG(1, {});
+                        const svg = toolkit.renderToSVG(1);
                         verovioapp.innerHTML = svg;
                     });
             }

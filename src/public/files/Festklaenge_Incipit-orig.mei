@@ -2,11 +2,44 @@
 <?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead xml:id="m1bseege">
+      <fileDesc xml:id="f1cjdkc2">
+         <titleStmt xml:id="t43elfv">
+            <title>Festklänge</title>
+            <respStmt>
+               <persName role="composer">Franz Liszt
+Arrangiert von [Arrangeur]</persName>
+               <persName role="arranger">[Arrangeur]</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt xml:id="p1rf57o2">
+            <date isodate="2024-02-14" type="encoding-date">2024-02-14</date>
+            <availability>
+               <distributor>Copyright © 2023 von [Copyright-Inhaber]</distributor>
+            </availability>
+         </pubStmt>
+      </fileDesc>
+      <encodingDesc xml:id="eu35q14">
+         <appInfo xml:id="ac4gggm">
+            <application xml:id="a1q3ovhv" isodate="2024-02-14T16:57:38" version="4.2.0-dev-a4931e3">
+               <name xml:id="n509miq">Verovio</name>
+               <p xml:id="p1vo3k90">Transcoded from MusicXML</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
    <music>
       <body>
          <mdiv xml:id="m1a1kv35">
             <score xml:id="sjczjfo">
                <scoreDef xml:id="s1cr154c">
+                  <pgFoot xml:id="p132mn0n">
+                     <rend xml:id="r1amy8u7" halign="center" valign="middle" fontstyle="normal" fontweight="normal">Festklänge</rend>
+                     <rend xml:id="r64k7rr" halign="center" valign="middle" fontstyle="normal" fontweight="normal">Incipit</rend>
+                     <rend xml:id="ridjwli" halign="right" valign="middle" fontstyle="normal" fontweight="normal">Franz Liszt
+Arrangiert von [Arrangeur]</rend>
+                     <rend xml:id="rfuhcmq" halign="center" valign="middle" fontstyle="normal" fontweight="normal">Copyright © 2023 von [Copyright-Inhaber]</rend>
+                  </pgFoot>
                   <staffGrp xml:id="sq76o2v">
                      <staffGrp xml:id="s2574zi">
                         <grpSym xml:id="g1d5u6z7" symbol="brace" />
