@@ -1,13 +1,38 @@
 @font-face {
-  font-family: InterVariable;
+  font-family: Beausite Classic;
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 300;
   font-display: swap;
-  src: url("/fonts/InterVariable.woff2") format("woff2");
+  src: url("/fonts/BeausiteClassicWebTrial-Clear.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Beausite Classic;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Beausite Classic;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/BeausiteClassicWebTrial-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Make Way;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/MakeWayTrial-Semibold.woff2") format("woff2");
 }
 
 h1, h2 {
-  font-weight: 400;
+  font-weight: 500;
+  font-family: "Make Way", serif;
 }
 
 h3 {
@@ -15,11 +40,11 @@ h3 {
 }
 
 h4, h5 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .max-textblock-width {

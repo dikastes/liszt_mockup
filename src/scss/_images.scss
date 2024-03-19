@@ -39,7 +39,8 @@
   margin-right: 0.5em;
   background-color: var(--bs-primary);
   color: white;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: $font-family-base;
 
   @include media-breakpoint-up(xl) {
     margin-left: -2em;
@@ -106,3 +107,14 @@
   }
 }
 
+.navbar-brand-image {
+  width: 140px;
+  @include media-breakpoint-up(md) {
+    width: 170px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

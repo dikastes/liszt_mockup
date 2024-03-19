@@ -1,5 +1,10 @@
 .sidebar {
 
+  h1, h2 {
+    font-weight: 500;
+    font-family: $font-family-base;
+  }
+
   &-box {
     border: 1px solid $mockup-border-gray;
     padding: 1rem;

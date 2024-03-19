@@ -34,8 +34,11 @@ padding: 0;
 
 .accordion-header {
   font-size:  $font-size-base * 1.25;
-  font-weight: 500;
+  font-weight: 300;
   margin: 0.66rem 0 0.66rem 0;
+  button {
+    font-weight: 300;
+  }
 }
 
 .accordion-item {
