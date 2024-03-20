@@ -14,7 +14,7 @@ document.querySelectorAll('[data-verovio="mei"]')
                    // adjustPageWidth: true,
                     adjustPageHeight: true,
                 });
-              toolkit.select({measureRange: "1-8"})
+           //   toolkit.select({measureRange: "1-8"})
 
             // ToDo: Error handling
                 fetch(meiURL)
