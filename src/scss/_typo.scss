@@ -25,13 +25,17 @@
 @font-face {
   font-family: Make Way;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
-  src: url("/fonts/MakeWayTrial-Semibold.woff2") format("woff2");
+  src: url("/fonts/MakeWayTrial-Regular.woff2") format("woff2");
+}
+
+h1 {
+  font-size: 44px;
 }
 
 h1, h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Make Way", serif;
 }
 
@@ -52,7 +56,11 @@ strong {
  // hyphens: auto;
 }
 
-
+.bigfont {
+  --bs-body-font-size: 18px;
+ --bs-body-line-height: 1.45;
+  letter-spacing: 0.01em;
+}
 
 
 .flex-between
