@@ -105,6 +105,40 @@
 
 .qcard {
   border: 1px solid $border-color;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem 2rem;
 
+
+
+  .icon {
+    margin-left: -2rem;
+    margin-top: -1.5rem;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+}
+
+
+.konkordanz {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2em;
+  font-weight: 400;
+  width: auto;
+
+
+  @include media-breakpoint-up(lg) {
+    margin-top: -2rem;
+    font-size: 125%;
+
+  }
+}
+
+ul.simplelist {
+  padding-left: 1em;
+
+    li {
+        margin-bottom: 0.5em;
+    }
 }
