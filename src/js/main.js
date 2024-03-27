@@ -2,12 +2,18 @@
 import '../scss/styles.scss'
 
 // Import only the Bootstrap components we need
-import { Popover, Dropdown, Collapse } from 'bootstrap';
+import { Popover, Dropdown, Collapse, Tooltip } from 'bootstrap';
 
 // Create an example popover
 document.querySelectorAll('[data-bs-toggle="popover"]')
   .forEach(popover => {
     new Popover(popover)
+  })
+
+// enable tooltips
+document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  .forEach(tooltip => {
+    new Tooltip(tooltip)
   })
 
 // first simple variant for the text-collapse of long texts after 12 Lines

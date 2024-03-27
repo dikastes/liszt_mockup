@@ -36,14 +36,17 @@
   align-items: center;
   justify-content: center;
   width: 1.5em;
-  margin-right: 0.5em;
+  margin-right: 1rem;
   background-color: var(--bs-primary);
   color: white;
   font-weight: 500;
   font-family: $font-family-base;
 
   @include media-breakpoint-up(xl) {
-    margin-left: -2em;
+    // calc margin left 1.5em + 0.5rem
+    margin-left: calc(-1 * (1.5em + 1rem));
+
+
   }
 }
 
