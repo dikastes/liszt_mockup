@@ -4,22 +4,26 @@
     margin-bottom: 2rem;
   }
   @include media-breakpoint-up(lg) {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
 
 
   .title-row {
-    display: flex;
+ //   display: flex;
   //  justify-content: space-between;
-    flex-wrap: wrap;
+  //  flex-wrap: wrap;
     margin-bottom: 1em;
 
     h3 {
-      font-weight: 300;
-      font-size: 1.2rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      font-family: "Make Way", serif;
+
       .title-row-label {
         font-weight: normal;
+        font-family: "Make Way", serif;
+
       }
     }
 
@@ -28,9 +32,9 @@
     }
 
     h1, h2, h3 {
-      display: flex;
-      margin-bottom: 0;
-      flex-wrap: wrap;
+  //    display: flex;
+  //    margin-bottom: 0;
+  //    flex-wrap: wrap;
     }
 
     &-label {
@@ -40,7 +44,13 @@
       @include media-breakpoint-up(md) {
           width: auto;
       }
+
+      &.arrow {
+        font-size: 2em;
+        margin-right: 0;
+      }
     }
+
 
     &-link {
       margin-left: 0;

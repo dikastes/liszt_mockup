@@ -6,6 +6,12 @@
   }
 
   &-box {
+
+    // first element with class &box no padding top
+    &:first-child {
+      padding-top: 0;
+    }
+
    // border: 1px solid $mockup-border-gray;
     padding: 1rem;
    // border-radius: $border-radius;
@@ -47,7 +53,7 @@
       overflow: hidden;
       max-width: 250px;
       white-space: nowrap;
-      padding: 0.3rem 0.33rem 0.3rem 0.33rem;
+      padding: 0.33em 0.33em 0.3em 0.33em;
       text-transform: uppercase;
       font-weight: 400;
     //  font-size: $small-font-size;
