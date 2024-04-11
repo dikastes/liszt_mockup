@@ -16,49 +16,71 @@
 
 {{> searchBar }}
 
+{{> sideMenu }}
 <main>
-    <div class="container-xl bd-gutter">
+    <div class="hero parent">
+        <div class="container-xl ">
+            <div class="row">
+                <div class="col-12 hero-col">
+                    <div class="hero-title">
+                        <a href="/liszt_mockup/werkansicht.html">
+                        <h4 class="icon-left">
+                            <span class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Sie befinden sich auf Werkebene, für Informationen klicken">W</span>
+                           <span
+                                    class="title-row-label arrow">&larr;</span>Festklänge, Symphonische Dichtung Nr. 7
+                        </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero child">
+        <div class="container-xl ">
+            <div class="row">
+                <div class="col-12 hero-col">
+                    <div class="hero-title">
+                            <h1 class="icon-left">
+                                <span class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Sie befinden sich auf Manifestations-Ebene, für Informationen klicken">M</span>
+                                Autograph, D-WRgs GSA 60/A 7a
+                            </h1>
+                    </div>
+                    <div class="hero-konkordanz">
+                        <div data-bs-toggle="popover" data-bs-placement="left" data-bs-title="Konkordanz" data-bs-content="Erläuterungen und Links hier" ><span>RISM ID: 1001256910</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="row" style="min-height: 300px">
-            <div class="col-12 mb-4 mb-md-0 col-md-9">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-12 detail-content mb-4 mb-md-0 col-md-9">
 
-                <div class="title">
-                    <div class="title-row"><h3><a href="/liszt_mockup/werkansicht.html" class="icon black" data-bs-toggle="tooltip" data-bs-placement="top" title="zurück zur Werkebene">W</a><span
-                            class="title-row-label arrow">&larr;</span>Festklänge, Symphonische Dichtung Nr. 7<a
-                            href="#" class="title-row-link">Liszt QWV: XYZ</a></h3></div>
-                    <div class="title-row"><h1><span class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Sie befinden sich auf Manifestations-Ebene, für Informationen klicken">M</span>Autograph, D-WRgs GSA 60/A 7a<a href="#"
-                                                                                                          class="title-row-link">RISM-ID:
-                        1001256910</a></h1></div>
+                <div class="digitalisat">
+
+                    <section class="digitalisat-image">
+                        <a class="d-inline-block" href="https://ores.klassik-stiftung.de/ords/f?p=401:2:::::P2_ID:190269">
+                            <img src="images/notenblatt.png" width="300" height="398" alt="Bild vom Digitalisat"
+                                 class="source-image ">
+                            <span class="d-block mt-2 text-center">Zum Digitalisat</span>
+                        </a>
+                    </section>
+
+                    <div class="digitalisat-info">
+                    <p><span class="title">[Titelseite]</span></p>
+                    <p class="mb"><span class="title">[Kommentar zum Titel (Titelseite)]</span></p>
+                    <p><span class="title">Titel (Notentext):</span> Festklänge</p>
+                    <p class="mb"><span class="title">Kommentar zum Titel (Notentext):</span> Nur im hochauflösenden Digitalisat zu erahnen, stammt von Liszt.</p>
+                    <p class="mb"><span class="title">[Text-Incipit(s)]</span></p>
+                    <p class="mb"><span class="title">[Sprachcode]</span></p>
+                    <p><span class="title">[Widmung des Werkes]</span></p>
+                    <p class="mb"><span class="title">[Kommentar zur Widmung]</span></p>
+                    </div>
+
                 </div>
 
-                <div class="max-textblock-width ">
-
-                    <p>
-                        <strong>[Titelseite]</strong>
-                        <br/><strong>[Kommentar zum Titel (Titelseite)]</strong>
-                    </p>
-
-
-                    <p>
-                        <strong>Titel (Notentext):</strong>
-                        Festklänge<br/><br/>
-                        <strong>Kommentar zum Titel (Notentext):</strong> Nur im hochauflösenden Digitalisat zu erahnen,
-                        stammt von Liszt.
-                    </p>
-
-                    <p>
-                        <strong>[Text-Incipit(s)]</strong>
-                    </p>
-                    <p>
-                        <strong>[Sprachcode]</strong>
-                    </p>
-                    <p>
-                        <strong>[Widmung des Werkes]</strong><br/>
-                        <strong>[Kommentar zur Widmung]</strong>
-                    </p>
-
-
-                    <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -67,7 +89,7 @@
                                 </button>
                             </h3>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                                <div class="accordion-body">
+                                <div class="accordion-body max-textblock-width">
 
                                     <p>
                                         <strong>[Paratext]</strong>
@@ -90,7 +112,6 @@
                             </div>
                         </div>
 
-
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -99,7 +120,7 @@
                                 </button>
                             </h3>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                                <div class="accordion-body">
+                                <div class="accordion-body max-textblock-width">
                                     <p>
                                         <strong>Schrift:</strong><br/>Liszt (schwarze und rote Tinte, Rötel, Bleistift),
                                         Dr (? Bleistift)<br/><br/>
@@ -127,7 +148,6 @@
                             </div>
                         </div>
 
-
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -137,7 +157,7 @@
                                 </button>
                             </h3>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                                <div class="accordion-body">
+                                <div class="accordion-body max-textblock-width">
 
                                         <p>
                                             <strong>Quellentyp:</strong> Autographes Arbeitsmanuskript<br/>
@@ -239,8 +259,7 @@
                                 </div>
                             </div>
 
-
-                            <div class="accordion-item">
+                        <div class="accordion-item">
                                 <h3 class="accordion-header" id="headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFour" aria-expanded="false"
@@ -249,7 +268,7 @@
                                     </button>
                                 </h3>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body max-textblock-width">
                                         <p>
                                             <strong>[Kommentar]</strong>
                                         </p>
@@ -258,7 +277,7 @@
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                        <div class="accordion-item">
                                 <h3 class="accordion-header" id="headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFive" aria-expanded="false"
@@ -267,7 +286,7 @@
                                     </button>
                                 </h3>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                                    <div class="accordion-body">
+                                    <div class="accordion-body max-textblock-width">
                                         <p>
                                             <strong>Standort:</strong> Herzogin Anna Amalia Bibliothek<br/>
                                             <strong>Ort:</strong> Weimar<br/>
@@ -284,51 +303,20 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-
-
-                    <br/><br/><br/> <h4 class="mt-5">(Leser, die diesen Artikel angesehen haben, haben
-                    auch angesehen:)</h4>
-
-
-                </div>
-
-                <div class="col col-12 mt-3">
-                    <div class="row">
-
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="qcard">
-                                <span class="icon">Q</span>
-                                Titel der Quelle<br>
-                                --->
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="qcard">
-                                <span class="icon">Q</span>
-
-                                Titel der Quelle<br>
-                                --->
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="qcard">
-                                <span class="icon">Q</span>
-
-                                Titel der Quelle<br>
-                                --->
-                            </div>
-                        </div>
-
-
                     </div>
 
-                </div>
 
+
+                <h4 class="mt-5">(Leser, die diesen Artikel angesehen haben, haben auch angesehen:)</h4>
+
+
+
+                        <div class="q-grid">
+                            <div class="q-grid-item"><a href="#"><svg class="q-grid-icon"><use xlink:href="./files/IconSprites.svg#manuscript"></use></svg>{{> placeholder-svg }}<div class="q-grid-item-label">Autographer Entwurf</div></a> </div>
+                            <div class="q-grid-item"><a href="/liszt_mockup/manuskript.html"><svg class="q-grid-icon"><use xlink:href="./files/IconSprites.svg#manuscript"></use></svg><img src="images/notenblatt.png" /><div class="q-grid-item-label">Autographes Arbeitsmanuskript</div></a></div>
+                            <div class="q-grid-item"><a href="#"><svg class="q-grid-icon"><use xlink:href="./files/IconSprites.svg#manuscript"></use></svg>{{> placeholder-svg }}<div class="q-grid-item-label">Einschub Blechbläserstimmen für autographe Partitur (GSA 60/A 7a)</div></a></div>
+                            <div class="q-grid-item"><a href="#"><svg class="q-grid-icon"><use xlink:href="./files/IconSprites.svg#manuscript"></use></svg>{{> placeholder-svg }}<div class="q-grid-item-label">Korrigierte Stichvorlage (Raff)</div></a></div>
+                    </div>
 
                 <div class="row" id="collapsegroup">
                     <div class="col-12 collapse" id="collapse1" data-bs-parent="#collapsegroup">
@@ -347,62 +335,17 @@
 
                 </div>
 
-
             </div>
+
             <div class="col-12 col-md-3 sidebar">
-                <section class="sidebar-box">
-                    <a class="d-inline-block" href="https://ores.klassik-stiftung.de/ords/f?p=401:2:::::P2_ID:190269">
-                        <img src="images/notenblatt.png" width="300" height="398" alt="Bild vom Digitalisat"
-                             class="source-image ">
-                        <span class="d-block mt-2 text-center">Zum Digitalisat</span>
-                    </a>
-                </section>
 
 
-                <section class="sidebar-box">
-                    <h2 class="source-image-label"><strong>Erwähnte Personen</strong></h2>
-                    <ul class="tags">
-                        <li><a href="#">Friedrich Schiller</a></li>
-                        <li><a href="#">Lina Ramann</a></li>
-                        <li><a href="#">Peter Raabe</a></li>
-                        <li><a href="#">Richard Pohl</a></li>
-                        <li><a href="#">Maria Pawlowna</a></li>
-                        <li><a href="#">Carolyne zu Sayn-Wittgenstein</a></li>
-                    </ul>
-                </section>
+                {{> sidebarTags withTags=1}}
 
-                <section class="sidebar-box">
-                    <h2 class="source-image-label"><strong>Erwähnte Werke</strong></h2>
-                    <ul class="tags">
-                        <li><a href="#">Werk 1</a></li>
-                        <li><a href="#">Werk 2</a></li>
-                        <li><a href="#">Werk 3</a></li>
-                    </ul>
-                </section>
 
-                <section class="sidebar-box">
-                    <h2 class="source-image-label"><strong>Erwähnte Institutionen</strong></h2>
-                    <ul class="tags">
-                        <li><a href="#">Breitkopf & Härtel</a></li>
-                        <li><a href="#">Allgemeiner Deutscher Musikverein</a></li>
-                        <li><a href="#">Rheinisches Musikfest</a></li>
-
-                    </ul>
-                </section>
-
-                <section class="sidebar-box">
-                    <h2 class="source-image-label">Classification</h2>
-                    <ul class="tags">
-                        <li><a href="#">Notated music</a></li>
-                        <li><a href="#">Manuscript</a></li>
-                        <li><a href="#">Autograph</a></li>
-                        <li><a href="#">Score</a></li>
-                        <li><a href="#">Complete</a></li>
-                    </ul>
-                </section>
             </div>
-        </div>
-    </div>
+
+
 </main>
 
 {{> footer }}

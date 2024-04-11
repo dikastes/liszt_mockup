@@ -30,9 +30,12 @@
   src: url("/fonts/MakeWayTrial-Regular.woff2") format("woff2");
 }
 
-h1 {
-  font-size: 44px;
+body {
+  --bs-body-font-size: 18px;
+  --bs-body-line-height: 1.45;
+  // letter-spacing: 0.01em;
 }
+
 
 h1, h2 {
   font-weight: 400;
@@ -40,7 +43,8 @@ h1, h2 {
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Make Way", serif;
 }
 
 h4, h5 {
@@ -56,11 +60,6 @@ strong {
  // hyphens: auto;
 }
 
-.bigfont {
-  --bs-body-font-size: 18px;
- --bs-body-line-height: 1.45;
-  letter-spacing: 0.01em;
-}
 
 
 .flex-between
@@ -68,6 +67,7 @@ strong {
   display: flex;
   justify-content: space-between;
 }
+
 
 .small-fontsize {
   font-size: 0.85rem;

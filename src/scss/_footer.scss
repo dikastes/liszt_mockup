@@ -40,9 +40,14 @@ text-decoration: underline;
   }
 
   &-cta {
-    padding-top: 4rem;
+    margin-top: 2rem;
+    background-color: var(--bs-primary);
+
+    @include media-breakpoint-up(md) {
+      margin-top: 4rem;
+    }
+
     .container-xl {
-      background-color: var(--bs-primary);
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
